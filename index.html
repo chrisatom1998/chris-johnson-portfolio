@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Chris Johnson — Solutions Engineer at Google. AI tooling, cloud architecture, and full-stack development.">
+<meta name="description" content="Chris Johnson is a solutions engineer at Google who builds AI tools, cloud systems, and full-stack products.">
 <meta name="theme-color" content="#07131f">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Chris Johnson — Solutions Engineer">
-<meta property="og:description" content="AI tooling, cloud architecture, and full-stack development — Google, Microsoft, Georgia Tech.">
+<meta property="og:description" content="A solutions engineer working across AI tooling, cloud architecture, and full-stack product development.">
 <meta property="og:url" content="https://chrisatom1998.github.io/chris-johnson-portfolio/">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2307131f'/%3E%3Ccircle cx='16' cy='16' r='8.5' fill='none' stroke='%2363d4ee' stroke-width='1.8'/%3E%3Cellipse cx='16' cy='16' rx='13.5' ry='4.5' fill='none' stroke='%2363d4ee' stroke-width='1' opacity='0.65' transform='rotate(-18 16 16)'/%3E%3C/svg%3E">
@@ -1312,7 +1312,7 @@
   .cards > .card:not(.featured) .body > p:not(.meta) { display: none; }
 
   .wrap > section:not(#projects) { max-width: 1060px; width: 100%; margin-inline: auto; }
-  .section-head h2, .row h3, .contact-links a { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
+  .section-head h2, .row h3 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
   .row, .skill-row { grid-template-columns: 190px 1fr; }
   .skill-row { min-width: 0; }
   .skill-row .vals { min-width: 0; display: flex; flex-wrap: wrap; }
@@ -1774,7 +1774,7 @@
     --content-max: 1408px;
   }
   main.wrap { padding-inline: var(--content-gutter); }
-  .proof-band {
+  .nav, .proof-band, footer.site {
     width: min(var(--content-max), calc(100% - var(--content-gutter) - var(--content-gutter)));
   }
   .hero { overflow: clip; contain: paint; }
@@ -1794,6 +1794,9 @@
     align-items: center;
   }
   .nav-toggle { min-width: 44px; }
+  .contact-links a {
+    font: 400 0.88rem/1.25 'UbuntuMonoW', ui-monospace, monospace;
+  }
 
   /* These surfaces contain no link, so their hover state stays informational
      rather than suggesting that the entire card can be clicked. */
@@ -1841,6 +1844,7 @@
   @media (max-width: 760px) {
     :root { --content-gutter: 20px; }
     .hero-inner { padding-inline: 20px; }
+    .nav { width: calc(100% - 1rem); }
     .nav ul {
       visibility: hidden;
       opacity: 0;
@@ -1892,6 +1896,7 @@
       overflow-wrap: anywhere;
       hyphens: auto;
     }
+    .contact-links a { hyphens: manual; }
     .card.featured .body,
     .cards > .card:not(.featured),
     .cards > .card:not(.featured):last-child,
@@ -1957,7 +1962,7 @@
   <div class="hero-inner">
     <p class="eyebrow">Solutions Engineer</p>
     <h1><span>Chris</span><span>Johnson</span></h1>
-    <p class="lede">I build the connective tissue between products, platforms, and revenue through AI tooling, cloud architecture, and full&#8209;stack apps that make complex systems legible.</p>
+    <p class="lede">I build AI tools, cloud platforms, and full&#8209;stack products that connect technical systems to real business results.</p>
     <div class="actions">
       <a class="btn primary" href="#projects">Explore case studies&nbsp;&nbsp;→</a>
       <a class="btn" href="https://linkedin.com/in/christopherjohnson98" target="_blank" rel="noopener">LinkedIn ↗</a>
@@ -1968,7 +1973,7 @@
   <span class="lens-label architect">Architect</span>
   <span class="lens-label cloud">Cloud architecture</span>
   <span class="lens-label fullstack">Full-stack apps</span>
-  <p class="hero-caption">ambient graph · an homage to <a href="#knowledge-nebula">Knowledge Nebula</a></p>
+  <p class="hero-caption">ambient graph · inspired by <a href="#knowledge-nebula">Knowledge Nebula</a></p>
 </header>
 
 <section class="proof-band" aria-label="Career highlights">
@@ -2000,7 +2005,7 @@
     <div class="section-head">
       <p class="eyebrow">Projects</p>
       <h2>Projects Showcase</h2>
-      <p class="section-summary">A selection of projects that reflect how I think about systems, ship solutions, and turn complexity into clarity.</p>
+      <p class="section-summary">A few projects that show how I approach complex systems, build practical solutions, and make difficult ideas easier to understand.</p>
       <a class="view-all" href="https://github.com/chrisatom1998?tab=repositories" target="_blank" rel="noopener">View GitHub projects&nbsp;&nbsp;↗</a>
     </div>
     <div class="cards" id="all-projects">
@@ -2009,7 +2014,7 @@
           <p class="meta">Flagship project</p>
           <h3><a href="https://github.com/chrisatom1998/knowledgenebula" target="_blank" rel="noopener">Knowledge Nebula</a></h3>
           <div class="feature-summary">
-            <p>A privacy-first, local 3D document graph that helps you explore how ideas connect — with portable OpenUSD export.</p>
+            <p>A private, local-first 3D document graph for exploring connections between ideas, with portable OpenUSD export.</p>
             <p class="tags"><span>Local-first</span><span>3D graph</span><span>OpenUSD export</span></p>
           </div>
           <p class="card-links"><a href="https://github.com/chrisatom1998/knowledgenebula" target="_blank" rel="noopener">Explore the case study →</a></p>
@@ -2020,7 +2025,7 @@
         <div class="body">
           <p class="meta">2026 · Concept preview</p>
           <h3>Geopolitical Simulator</h3>
-          <p>A grand-strategy simulation where the player takes the helm of any real-world nation — steering its economy, politics, and military.</p>
+          <p>A grand-strategy simulation that puts you in charge of a real-world nation, from its economy and politics to its military.</p>
           <p class="tags">Simulation · Game design</p>
         </div>
       </article>
@@ -2028,7 +2033,7 @@
         <div class="body">
           <p class="meta">2026 · Concept preview</p>
           <h3>Relationship Maintenance App</h3>
-          <p>A mobile app geared toward keeping romantic relationships healthy and engaging — built for couples who want intention, not autopilot.</p>
+          <p>A mobile app that helps couples stay connected and intentional, without letting the relationship slip into autopilot.</p>
           <p class="tags">Mobile</p>
         </div>
       </article>
@@ -2038,7 +2043,7 @@
   <section id="experience" class="reveal">
     <div class="section-head">
       <p class="eyebrow">Experience</p>
-      <h2>Four years turning enterprise complexity into shipped product.</h2>
+      <h2>Four years building practical solutions for complex enterprise problems.</h2>
     </div>
     <article class="row">
       <p class="when">04/2025 — present</p>
@@ -2046,10 +2051,10 @@
         <h3>Technical Solutions Consultant</h3>
         <p class="org">Google — Irvine, CA</p>
         <ul>
-          <li>Lead monetization and revenue optimization across Firebase — mediation, open bidding, and latency improvements for mobile and CTV inventory.</li>
-          <li>Design internal tools and dashboards in SQL, TypeScript, and Next.js that automate performance insights and cut report turnaround time by 50%.</li>
-          <li>Drive greenfield initiatives connecting API-level data to unify tracking, debugging, and opportunity identification across the stack.</li>
-          <li>Serve as technical liaison across Product, Engineering, Sales, and Business Development — translating complex metrics into actionable recommendations.</li>
+          <li>Improve monetization for Firebase customers by addressing mediation, open bidding, and latency across mobile and CTV inventory.</li>
+          <li>Build internal tools and dashboards with SQL, TypeScript, and Next.js to automate performance analysis and cut report turnaround time by 50%.</li>
+          <li>Connect API data across the stack so teams can track issues, debug faster, and identify new opportunities.</li>
+          <li>Partner with Product, Engineering, Sales, and Business Development to turn complex performance data into clear recommendations.</li>
         </ul>
       </div>
     </article>
@@ -2059,9 +2064,9 @@
         <h3>Cloud Solution Architect</h3>
         <p class="org">Microsoft — Irvine, CA</p>
         <ul>
-          <li>Helped enterprise customers modernize operations with AI models, virtual agents, and custom applications built on Azure, Power Platform, and Dynamics 365.</li>
-          <li>Developed and maintained Azure Functions that streamlined internal processes, including the Value-Based Delivery catalog.</li>
-          <li>Guided secure, business-aligned cloud transitions as customers' technical and strategic advisor.</li>
+          <li>Helped enterprise customers modernize their operations with AI models, virtual agents, and custom apps built on Azure, Power Platform, and Dynamics 365.</li>
+          <li>Built and maintained Azure Functions that simplified internal workflows, including the Value-Based Delivery catalog.</li>
+          <li>Advised customers on secure cloud transitions that supported both their technical needs and business goals.</li>
         </ul>
       </div>
     </article>
@@ -2070,7 +2075,7 @@
   <section id="skills" class="reveal">
     <div class="section-head">
       <p class="eyebrow">Skills</p>
-      <h2>What I work with.</h2>
+      <h2>Tools and technologies I use.</h2>
     </div>
     <div class="skill-row">
       <p class="label">Languages</p>
@@ -2093,12 +2098,12 @@
   <section id="about" class="reveal">
     <div class="section-head">
       <p class="eyebrow">About</p>
-      <h2>Technical depth, translated into business momentum.</h2>
+      <h2>I connect technical depth to business results.</h2>
     </div>
-    <p class="about-copy">I work where product, engineering, and customers meet — making complex systems easier to understand, adopt, and improve. My background spans solution architecture, cloud platforms, AI tooling, and hands-on product development.</p>
+    <p class="about-copy">I work at the intersection of product, engineering, and customer needs. I make complex systems easier to understand, adopt, and improve, drawing on experience in solution architecture, cloud platforms, AI tooling, and hands-on product development.</p>
     <div class="about-stats">
-      <p class="stat"><span class="stat-num">4+</span><span class="stat-label">years shipping enterprise solutions</span></p>
-      <p class="stat"><span class="stat-num">2</span><span class="stat-label">tech leaders — Google &amp; Microsoft</span></p>
+      <p class="stat"><span class="stat-num">4+</span><span class="stat-label">years building enterprise solutions</span></p>
+      <p class="stat"><span class="stat-num">2</span><span class="stat-label">industry leaders — Google &amp; Microsoft</span></p>
       <p class="stat"><span class="stat-num">50%</span><span class="stat-label">faster report turnaround from internal tools</span></p>
     </div>
   </section>
@@ -2106,7 +2111,7 @@
   <section id="education" class="reveal">
     <div class="section-head">
       <p class="eyebrow">Education</p>
-      <h2>Georgia Tech, start to finish.</h2>
+      <h2>B.S. in Computer Science from Georgia Tech.</h2>
     </div>
     <article class="row">
       <p class="when">08/2016 — 05/2022</p>
@@ -2120,7 +2125,7 @@
   <section id="contact" class="reveal">
     <div class="section-head">
       <p class="eyebrow">Contact</p>
-      <h2>Let's build something.</h2>
+      <h2>Have a complex problem? Let's talk.</h2>
     </div>
     <div class="contact-links">
       <a href="mailto:Chrismjohnson19@gmail.com">Chrismjohnson19@gmail.com</a>
@@ -2133,7 +2138,7 @@
 
 <footer class="site">
   <span>© 2026 Chris Johnson</span>
-  <span>static site · no trackers · built for clarity</span>
+  <span>built as a static site · no trackers</span>
   <a class="to-top" href="#top">Back to top ↑</a>
 </footer>
 
