@@ -837,7 +837,7 @@
   @media (max-width: 1100px) {
     .nav { width: calc(100% - 1.25rem); }
     .hero-inner { padding-top: 5.2rem; }
-    .proof-band { width: calc(100% - 1.25rem); }
+    .proof-band { width: calc(100% - 4rem); }
     .proof-group { padding-inline: 0.8rem; }
   }
 
@@ -1590,7 +1590,7 @@
   @media (max-width: 1100px) {
     .nav { width: calc(100% - 1.25rem); padding-inline: 0.9rem 0.5rem; }
     .hero-inner { padding-top: 5.2rem; }
-    .proof-band { width: calc(100% - 1.25rem); }
+    .proof-band { width: calc(100% - 4rem); }
     .proof-group { padding-inline: 0.8rem; }
   }
 
@@ -1830,6 +1830,8 @@
   }
 
   @media (max-width: 760px) {
+    .hero-inner, main.wrap { padding-inline: 20px; }
+    .proof-band { width: calc(100% - 40px); }
     .nav ul {
       visibility: hidden;
       opacity: 0;
