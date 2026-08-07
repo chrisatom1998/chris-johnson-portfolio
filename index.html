@@ -1769,6 +1769,14 @@
   }
 
   /* ---------- full-audit fixes ---------- */
+  :root {
+    --content-gutter: 4rem;
+    --content-max: 1408px;
+  }
+  main.wrap { padding-inline: var(--content-gutter); }
+  .proof-band {
+    width: min(var(--content-max), calc(100% - var(--content-gutter) - var(--content-gutter)));
+  }
   .hero { overflow: clip; contain: paint; }
   .wrap > section, #all-projects, #knowledge-nebula { scroll-margin-top: 5.75rem; }
   .nav .brand-mark {
@@ -1802,6 +1810,7 @@
   .cards > .card:not(.featured):hover h3 { color: inherit; }
 
   @media (min-width: 761px) and (max-width: 1100px) {
+    :root { --content-gutter: 2rem; }
     #projects .section-head {
       grid-template-columns: minmax(0, 1fr) auto;
       column-gap: 1.5rem;
@@ -1830,8 +1839,8 @@
   }
 
   @media (max-width: 760px) {
-    .hero-inner, main.wrap { padding-inline: 20px; }
-    .proof-band { width: calc(100% - 40px); }
+    :root { --content-gutter: 20px; }
+    .hero-inner { padding-inline: 20px; }
     .nav ul {
       visibility: hidden;
       opacity: 0;
