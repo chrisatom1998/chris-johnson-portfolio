@@ -4805,6 +4805,24 @@
   }
 
 
+  /* ========== pass 25: static case-study panel, no shade sweep ========== */
+  html[data-theme="light"] .card.featured::before {
+    content: none !important;
+    display: none !important;
+    background: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+  html[data-theme="light"] #nebula-case,
+  html[data-theme="light"] #nebula-case.feat-row,
+  html[data-theme="light"] #nebula-case.case-excerpt {
+    animation: none !important;
+    transition: none !important;
+    filter: none !important;
+    background: #EBE4D6 !important;
+  }
+
+
 </style>
 
 <noscript><style>.site-loader { display: none !important; }</style></noscript>
