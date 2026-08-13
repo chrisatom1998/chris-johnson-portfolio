@@ -4726,6 +4726,44 @@
   }
 
 
+  /* ========== pass 22: contact height, blob, hero/stats air ========== */
+  html[data-theme="light"] #contact,
+  html[data-theme="light"] #contact.reveal,
+  html[data-theme="light"] section#contact {
+    padding: 4.5rem 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    overflow: hidden !important;
+  }
+  html[data-theme="light"] #contact::after {
+    inset: 12% -6% auto auto !important;
+    bottom: auto !important;
+    width: 240px !important;
+    height: 240px !important;
+  }
+  html[data-theme="light"] .contact-chapter {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.4rem !important;
+  }
+  html[data-theme="light"] #contact .mono-sub,
+  html[data-theme="light"] .contact-chapter .mono-sub {
+    margin: 0 !important;
+  }
+  html[data-theme="light"] .contact-links {
+    margin-top: 0 !important;
+  }
+  @media (min-width: 1024px) {
+    html[data-theme="light"] .hero-inner {
+      padding: 4.5rem 2rem 2.1rem !important;
+    }
+  }
+  html[data-theme="light"] .proof-stat,
+  html[data-theme="light"] .proof-group {
+    padding: 1.55rem 1.4rem 1.7rem !important;
+  }
+
+
 </style>
 
 <noscript><style>.site-loader { display: none !important; }</style></noscript>
