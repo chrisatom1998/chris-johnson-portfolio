@@ -4948,48 +4948,44 @@
           <div class="case-stack">
             <section class="case-block">
               <p class="case-kicker">Problem</p>
-              <h4>The itch</h4>
-              <p>I set out to build a drag-and-drop 3D mind map for internal docs. Not another dashboard. Something that felt like flying through a galaxy of my own knowledge, not staring at an org chart someone left in the microwave.</p>
-              <p>The bar was simple, and unforgiving. Zero-friction ingest. Connections that mean something. Visually spectacular. And actually useful: click a node, read the source.</p>
-              <p>Pretty but hollow is a screensaver, not a tool. I was not building a screensaver.</p>
+              <h4>Local research without inspectable structure</h4>
+              <p>I needed a way to explore internal documents as a graph without uploading them to a cloud corpus. Notes, papers, and source files sit in local folders; the links between them are not visible, and most tools that surface those links require the files to leave the machine.</p>
+              <p>The requirement was a 3D graph I could ingest a folder into, where selecting a node opens the source document. Rendering was secondary to whether an edge could be explained.</p>
             </section>
             <section class="case-block">
               <p class="case-kicker">Approach</p>
-              <h4>Why it had to stay in the tab</h4>
-              <p>The whole app is a client-side SPA. Parsing, embeddings, similarity, and clustering run in the browser, in web workers, so the scene does not jank while a corpus is coming in. Corpora live in IndexedDB. Files never leave the tab.</p>
-              <p>Optional cloud AI is off by default. Ollama covers the case where you want a model and still zero cloud. Production CSP enforces that. There is an air-gapped build.</p>
-              <p>If the graph required uploading a corpus, I would not use it on the work I actually care about.</p>
+              <h4>Client-side graph</h4>
+              <p>The application is a client-side SPA. Parsing, embeddings, similarity, and clustering run in the browser in web workers so ingest does not block the scene. Corpora are stored in IndexedDB. Documents do not leave the tab.</p>
+              <p>Optional cloud AI is off by default. Ollama is available when a local model is required. Production CSP enforces this constraint, and an air-gapped build is provided for the same reason.</p>
             </section>
             <section class="case-block">
-              <h4>The graph is a lie unless the edges are honest</h4>
-              <p>The hard part was never the 3D. Glow is a solved problem. Meaningful structure is not.</p>
-              <p>I layered extraction on purpose. Cheap deterministic signals first: markdown links, filename mentions, TF-IDF keywords. Path and folder affinity is a layout hint, not a fake edge.</p>
-              <p>Local embeddings second: transformers.js and BGE-small in a web worker, cosine similarity with a top-k cap so a few hundred docs do not become a hairball. Optional LLM enrichment third, for summaries and canonical topic labels. The graph works fully without the LLM.</p>
-              <p>Non-negotiable: every edge carries evidence so the UI can answer “why are these related?” Unexplainable edges destroy trust. A glowing line you cannot explain is just decoration.</p>
+              <h4>Relationship model</h4>
+              <p>3D rendering is not the difficult part. Assigning structure that can be inspected is.</p>
+              <p>Extraction is layered. Deterministic signals run first: markdown links, filename mentions, and TF-IDF keywords. Path and folder affinity is used as a layout hint, not as an edge.</p>
+              <p>Local embeddings run second: transformers.js and BGE-small in a web worker, with cosine similarity and a top-k cap so a corpus of a few hundred documents does not produce an unreadable graph. Optional LLM enrichment runs third, for summaries and canonical topic labels. The graph is functional without the LLM.</p>
+              <p>Every edge carries evidence so the interface can show why two documents are related.</p>
             </section>
             <section class="case-block">
-              <h4>Ingest that does not make you wait</h4>
-              <p>Pick a folder. It walks subfolders. Source-code repos come in with gitignore honored. Scanned PDFs go through bundled Tesseract. Folders can stay watched through the File System Access API, and on the desktop app the native watch is about a second.</p>
-              <p>The demo corpus comes in around 11 docs a second. On a large corpus, semantic similarity is chunked so ingest yields instead of freezing the tab. You should be flying through the graph, not babysitting a spinner.</p>
-              <p>None of that is the product. The in-app loop is still drop files, explore, read.</p>
+              <h4>Ingest</h4>
+              <p>A selected folder is walked recursively. Source-code repositories respect gitignore. Scanned PDFs are processed with bundled Tesseract. Folders can be watched through the File System Access API; on the desktop application the native watch interval is about one second.</p>
+              <p>The demo corpus ingests at about 11 documents per second. For larger corpora, semantic similarity is computed in chunks so the tab remains responsive. The working loop is ingest, explore, and read source.</p>
             </section>
             <section class="case-block">
-              <h4>The OpenUSD handoff</h4>
-              <p>OpenUSD export is interop, not the product. One .usda. Documents as prims, edges as curves with the evidence still attached, a detailed-and-summary variantSet.</p>
-              <p>The stage opens in usdview, Omniverse, Reality Composer Pro. A Python CLI validates the schema and packages .usdz. usd-agent can ask the stage questions.</p>
-              <p>The graph is allowed to leave the app without becoming a proprietary trap. The loop inside the tab does not change because of that sidecar.</p>
+              <h4>Interchange</h4>
+              <p>OpenUSD export is an interop sidecar rather than the primary interface. A single .usda file represents documents as prims and edges as curves that retain evidence, with a detailed/summary variantSet.</p>
+              <p>The stage opens in usdview, Omniverse, and Reality Composer Pro. A Python CLI validates the schema and packages .usdz. usd-agent can query the stage. The in-app loop is unchanged by this export path.</p>
             </section>
             <section class="case-block">
-              <h4>Rooms, without giving up the corpus</h4>
-              <p>Spec v1 listed collaboration as a non-goal. That is outdated. Rooms shipped: privacy-first, on Yjs and WebRTC, invite-based, a sanitized #collab= invite. Airgap builds still strip it.</p>
-              <p>What crosses the wire is annotations, peer presence, and view state: selection, camera, follow presenter, filters. Documents stay local to each peer. This is not a shared cloud corpus. That is the point.</p>
-              <p>Presence rings sit in the scene, and follow-presenter, so you can see what someone else is looking at. Optional signaling is opt-in. CSP allows it for a session; airgap still refuses.</p>
+              <h4>Collaboration</h4>
+              <p>Collaboration shipped after the v1 spec listed it as a non-goal. Rooms use Yjs and WebRTC, with sanitized invite links (#collab=). Air-gapped builds omit this path.</p>
+              <p>The session synchronizes annotations, peer presence, and view state: selection, camera, follow-presenter, and filters. Documents remain local to each peer. The room is not a shared cloud corpus.</p>
+              <p>Presence is shown as rings in the scene, with follow-presenter to align cameras. Signaling is opt-in. CSP permits it for a session; the air-gapped build does not.</p>
             </section>
             <section class="case-block">
               <p class="case-kicker">Outcome</p>
-              <h4>A private workspace you can sit in together</h4>
-              <p>Shareable graph URLs still omit full text and file bytes. You can keep multiple named corpora. There is a macOS app and a Linux AppImage. The entry bundle stays around 80 kB so the shell stays thin and heavy chunks lazy-load.</p>
-              <p>What shipped is a private thinking workspace: follow connections without leaving the machine, keep ownership of the data, and hand a scene off through a real interchange format. Rooms share the view, not the files. I am not going to sell that as Google Docs for documents.</p>
+              <h4>Local-first workspace</h4>
+              <p>Shareable graph URLs omit full text and file bytes. Multiple named corpora are supported. There is a macOS application and a Linux AppImage. The entry bundle is about 80 kB; heavier modules lazy-load.</p>
+              <p>The result is a local-first workspace: documents stay on the machine, relationships are inspectable, scenes can be exported through OpenUSD, and rooms synchronize view state without sharing the corpus.</p>
             </section>
           </div>
         </div>
