@@ -4952,7 +4952,7 @@
             <section class="case-block">
               <h4>Ingest that does not make you wait</h4>
               <p>Pick a folder. It walks subfolders. Source-code repos come in with gitignore honored. Scanned PDFs go through bundled Tesseract. Folders can stay watched through the File System Access API, and on the desktop app the native watch is about a second.</p>
-              <p>The demo corpus comes in around 11 docs a second. You should be flying through the graph, not babysitting a spinner.</p>
+              <p>The demo corpus comes in around 11 docs a second. On a large corpus, semantic similarity is chunked so ingest yields instead of freezing the tab. You should be flying through the graph, not babysitting a spinner.</p>
               <p>None of that is the product. The in-app loop is still drop files, explore, read.</p>
             </section>
             <section class="case-block">
@@ -4962,11 +4962,16 @@
               <p>The graph is allowed to leave the app without becoming a proprietary trap. The loop inside the tab does not change because of that sidecar.</p>
             </section>
             <section class="case-block">
+              <h4>Rooms, without giving up the corpus</h4>
+              <p>Spec v1 listed collaboration as a non-goal. That is outdated. Rooms shipped: privacy-first, on Yjs and WebRTC, invite-based, a sanitized #collab= invite. Airgap builds still strip it.</p>
+              <p>What crosses the wire is annotations, peer presence, and view state: selection, camera, follow presenter, filters. Documents stay local to each peer. This is not a shared cloud corpus. That is the point.</p>
+              <p>Presence rings sit in the scene, and follow-presenter, so you can see what someone else is looking at. Optional signaling is opt-in. CSP allows it for a session; airgap still refuses.</p>
+            </section>
+            <section class="case-block">
               <p class="case-kicker">Outcome</p>
-              <h4>What I would still call unfinished</h4>
-              <p>Shareable graph URLs omit full text and file bytes. You can keep multiple named corpora. There is a macOS app and a Linux AppImage. The entry bundle stays around 80 kB so the shell stays thin and heavy chunks lazy-load.</p>
-              <p>What shipped is a private thinking workspace: follow connections without leaving the machine, keep ownership of the data, and hand a scene off through a real interchange format.</p>
-              <p>Collaboration, presence and rooms, is in flight. Spec v1 listed it as a non-goal. I am not going to sell a shared whiteboard I have not shipped.</p>
+              <h4>A private workspace you can sit in together</h4>
+              <p>Shareable graph URLs still omit full text and file bytes. You can keep multiple named corpora. There is a macOS app and a Linux AppImage. The entry bundle stays around 80 kB so the shell stays thin and heavy chunks lazy-load.</p>
+              <p>What shipped is a private thinking workspace: follow connections without leaving the machine, keep ownership of the data, and hand a scene off through a real interchange format. Rooms share the view, not the files. I am not going to sell that as Google Docs for documents.</p>
             </section>
           </div>
         </div>
