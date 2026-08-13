@@ -4743,6 +4743,68 @@
   }
 
 
+  /* ========== pass 24: Nebula case-study excerpt ========== */
+  html[data-theme="light"] #nebula-case.feat-row,
+  html[data-theme="light"] #nebula-case {
+    grid-column: 1 / -1 !important;
+    padding: 2.15rem 1.9rem 2.55rem !important;
+    background: #EBE4D6 !important;
+    border-top: 1px solid #D6CFC0 !important;
+    scroll-margin-top: 5.5rem !important;
+  }
+  html[data-theme="light"] #nebula-case .feat-list {
+    display: none !important;
+  }
+  html[data-theme="light"] .case-stack {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.7rem !important;
+    max-width: 42rem !important;
+  }
+  html[data-theme="light"] .case-block .case-kicker,
+  html[data-theme="light"] .case-kicker {
+    display: block !important;
+    margin: 0 0 0.28rem !important;
+    font-family: Figtree, sans-serif !important;
+    font-size: 0.68rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.16em !important;
+    text-transform: uppercase !important;
+    color: #8A8478 !important;
+    -webkit-text-fill-color: #8A8478 !important;
+  }
+  html[data-theme="light"] .case-block h4 {
+    margin: 0 0 0.5rem !important;
+    font-family: "Instrument Serif", Georgia, serif !important;
+    font-weight: 400 !important;
+    font-size: 1.38rem !important;
+    line-height: 1.25 !important;
+    color: #161410 !important;
+    -webkit-text-fill-color: #161410 !important;
+  }
+  html[data-theme="light"] .case-block p {
+    margin: 0 0 0.72rem !important;
+    font-family: Figtree, ui-sans-serif, system-ui, sans-serif !important;
+    font-size: 1.02rem !important;
+    line-height: 1.65 !important;
+    color: #3F3A34 !important;
+    -webkit-text-fill-color: #3F3A34 !important;
+    max-width: none !important;
+  }
+  html[data-theme="light"] .case-block p:last-child {
+    margin-bottom: 0 !important;
+  }
+  @media (max-width: 640px) {
+    html[data-theme="light"] #nebula-case.feat-row,
+    html[data-theme="light"] #nebula-case {
+      padding: 1.7rem 1.2rem 2rem !important;
+    }
+    html[data-theme="light"] .case-stack {
+      gap: 1.45rem !important;
+    }
+  }
+
+
 </style>
 
 <noscript><style>.site-loader { display: none !important; }</style></noscript>
@@ -4864,20 +4926,48 @@
           <p class="card-links"><a class="case-cta" href="#nebula-case">How I built it&nbsp;&nbsp;→</a><a class="case-gh" href="https://github.com/chrisatom1998/knowledgenebula" target="_blank" rel="noopener">GitHub ↗</a></p>
         </div>
         <img class="shot" src="assets/knowledge-nebula-orbit-transparent.webp" alt="Knowledge Nebula network orbiting a faceted OpenUSD stage anchor" width="1600" height="560" decoding="async" loading="lazy" fetchpriority="low">
-        <div class="feat-row" id="nebula-case" aria-label="Knowledge Nebula case study">
-          <div class="feat-list">
-            <div class="feat">
-              <span class="k">Problem</span>
-              <p>Notes and research scatter across folders and tabs. The links between ideas stay invisible, and most “smart” tools want your documents in the cloud.</p>
-            </div>
-            <div class="feat">
-              <span class="k">Approach</span>
-              <p>A local-first 3D graph you can navigate spatially — documents as nodes, relationships as structure — with OpenUSD export so scenes stay portable beyond the app.</p>
-            </div>
-            <div class="feat">
-              <span class="k">Outcome</span>
-              <p>A private thinking workspace: follow connections without leaving your machine, keep ownership of the data, and hand off graph scenes through a real interchange format.</p>
-            </div>
+        <div class="feat-row case-excerpt" id="nebula-case" aria-label="Knowledge Nebula case study">
+          <div class="case-stack">
+            <section class="case-block">
+              <p class="case-kicker">Problem</p>
+              <h4>The itch</h4>
+              <p>I set out to build a drag-and-drop 3D mind map for internal docs. Not another dashboard. Something that felt like flying through a galaxy of my own knowledge, not staring at an org chart someone left in the microwave.</p>
+              <p>The bar was simple, and unforgiving. Zero-friction ingest. Connections that mean something. Visually spectacular. And actually useful: click a node, read the source.</p>
+              <p>Pretty but hollow is a screensaver, not a tool. I was not building a screensaver.</p>
+            </section>
+            <section class="case-block">
+              <p class="case-kicker">Approach</p>
+              <h4>Why it had to stay in the tab</h4>
+              <p>The whole app is a client-side SPA. Parsing, embeddings, similarity, and clustering run in the browser, in web workers, so the scene does not jank while a corpus is coming in. Corpora live in IndexedDB. Files never leave the tab.</p>
+              <p>Optional cloud AI is off by default. Ollama covers the case where you want a model and still zero cloud. Production CSP enforces that. There is an air-gapped build.</p>
+              <p>If the graph required uploading a corpus, I would not use it on the work I actually care about.</p>
+            </section>
+            <section class="case-block">
+              <h4>The graph is a lie unless the edges are honest</h4>
+              <p>The hard part was never the 3D. Glow is a solved problem. Meaningful structure is not.</p>
+              <p>I layered extraction on purpose. Cheap deterministic signals first: markdown links, filename mentions, TF-IDF keywords. Path and folder affinity is a layout hint, not a fake edge.</p>
+              <p>Local embeddings second: transformers.js and BGE-small in a web worker, cosine similarity with a top-k cap so a few hundred docs do not become a hairball. Optional LLM enrichment third, for summaries and canonical topic labels. The graph works fully without the LLM.</p>
+              <p>Non-negotiable: every edge carries evidence so the UI can answer “why are these related?” Unexplainable edges destroy trust. A glowing line you cannot explain is just decoration.</p>
+            </section>
+            <section class="case-block">
+              <h4>Ingest that does not make you wait</h4>
+              <p>Pick a folder. It walks subfolders. Source-code repos come in with gitignore honored. Scanned PDFs go through bundled Tesseract. Folders can stay watched through the File System Access API, and on the desktop app the native watch is about a second.</p>
+              <p>The demo corpus comes in around 11 docs a second. You should be flying through the graph, not babysitting a spinner.</p>
+              <p>None of that is the product. The in-app loop is still drop files, explore, read.</p>
+            </section>
+            <section class="case-block">
+              <h4>The OpenUSD handoff</h4>
+              <p>OpenUSD export is interop, not the product. One .usda. Documents as prims, edges as curves with the evidence still attached, a detailed-and-summary variantSet.</p>
+              <p>The stage opens in usdview, Omniverse, Reality Composer Pro. A Python CLI validates the schema and packages .usdz. usd-agent can ask the stage questions.</p>
+              <p>The graph is allowed to leave the app without becoming a proprietary trap. The loop inside the tab does not change because of that sidecar.</p>
+            </section>
+            <section class="case-block">
+              <p class="case-kicker">Outcome</p>
+              <h4>What I would still call unfinished</h4>
+              <p>Shareable graph URLs omit full text and file bytes. You can keep multiple named corpora. There is a macOS app and a Linux AppImage. The entry bundle stays around 80 kB so the shell stays thin and heavy chunks lazy-load.</p>
+              <p>What shipped is a private thinking workspace: follow connections without leaving the machine, keep ownership of the data, and hand a scene off through a real interchange format.</p>
+              <p>Collaboration, presence and rooms, is in flight. Spec v1 listed it as a non-goal. I am not going to sell a shared whiteboard I have not shipped.</p>
+            </section>
           </div>
         </div>
       </article>
