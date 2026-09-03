@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.chrisjohnson.solutions/sitemap.xml

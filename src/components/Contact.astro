@@ -1,0 +1,19 @@
+---
+const { portfolio } = Astro.props;
+---
+
+<div class="contact-panel" data-reveal>
+  <div>
+    <p class="eyebrow">Contact</p>
+    <h2>Let’s solve something complicated.</h2>
+    <p>
+      I’m interested in customer-facing technical roles where architecture, data, AI, and product
+      judgment all matter.
+    </p>
+  </div>
+  <div class="contact-actions">
+    <a class="button button-primary" href={portfolio.contact.emailUrl}>Email Chris</a>
+    <a class="button button-secondary" href={portfolio.contact.linkedinUrl} target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
+    <a class="text-link" href={portfolio.resumeUrl}>Download résumé</a>
+  </div>
+</div>

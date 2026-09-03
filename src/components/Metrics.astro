@@ -1,0 +1,14 @@
+---
+const { metrics } = Astro.props;
+---
+
+<section class="metrics-wrap" aria-label="Career highlights">
+  <div class="metrics shell">
+    {metrics.map((metric) => (
+      <article class="metric" data-reveal>
+        <strong>{metric.value}</strong>
+        <p>{metric.label}</p>
+      </article>
+    ))}
+  </div>
+</section>

@@ -2,29 +2,29 @@
 
 ## Goal
 
-Replace the generated one-file portfolio with a maintainable Astro source project while keeping the existing warm editorial visual identity and improving recruiter conversion, factual accuracy, accessibility, privacy, and project storytelling.
+Replace the generated one-file portfolio with a maintainable Astro source project while keeping the warm editorial visual identity and improving recruiter conversion, factual accuracy, accessibility, privacy, and project storytelling.
 
 ## Positioning and copy
 
-The site must use the truthful headline **AdTech Solutions Engineer · Technical Solutions Consultant**. It must not present Chris as a current Google employee or claim that “Solutions Architect” was his formal Google title.
+The site uses the truthful headline **AdTech Solutions Engineer · Technical Solutions Consultant**. It does not present Chris as a current Google employee or claim that “Solutions Architect” was his formal Google title.
 
 The Google experience entry is **AdTech Solutions Engineer (Technical Solutions Consultant)** from **04/2025–07/2026**. The Microsoft entry is **Cloud Solution Architect** from **08/2022–03/2025**.
 
-Quantified claims must come from the current resume and be easy to defend in an interview:
+Quantified claims come from the current résumé and are straightforward to defend in an interview:
 
 - Supported 50+ mobile app publishers at Google.
 - Reduced manual QA and report turnaround time by 50% through SQL analysis and TypeScript/Next.js tools.
 - Delivered cloud and AI solutions for 50+ Microsoft customers.
 - Built reusable Azure Functions and workflow automation that saved approximately 10 hours per week.
 
-Claims such as “twofold adoption,” “35% decision-making improvement,” “45 solutions launched,” and “half of all workflows” are excluded because the current resume does not provide sufficiently clear measurement context.
+Claims such as “twofold adoption,” “35% decision-making improvement,” “45 solutions launched,” and “half of all workflows” are excluded because the current résumé does not provide sufficiently clear measurement context.
 
 ## Information architecture
 
 The home page contains:
 
 1. A compact navigation bar.
-2. A recruiter-oriented hero with the accurate headline, a concise value proposition, and three actions: view work, download resume, and contact.
+2. A recruiter-oriented hero with the accurate headline, a concise value proposition, and actions for selected work, résumé download, and contact.
 3. Four evidence tiles using the defensible metrics above.
 4. A brief about section.
 5. Google and Microsoft experience entries.
@@ -32,7 +32,7 @@ The home page contains:
 7. Skills grouped by customer-facing architecture, data, cloud, and application development.
 8. A contact section with email and LinkedIn only.
 
-The full Knowledge Nebula engineering story moves to `/work/knowledge-nebula/`. The home-page card contains a short problem/outcome summary and links to the case study, the live Vercel deployment, and GitHub.
+The full Knowledge Nebula engineering story lives at `/work/knowledge-nebula/`. The home-page card contains a concise problem/outcome summary and links to the case study, live deployment, and GitHub.
 
 The Relationship Maintenance App is removed from the primary project grid so the page emphasizes shipped, inspectable work.
 
@@ -42,12 +42,12 @@ Astro 7 generates a fully static site. Reusable source is organized into layouts
 
 - `src/data/portfolio.js` is the single source of truth for experience, projects, skills, metrics, and contact links.
 - `src/layouts/BaseLayout.astro` owns metadata, structured data, navigation, footer, and shared assets.
-- Focused components render hero, metrics, experience, project cards, skills, and contact.
+- Focused components render the hero, metrics, experience, project cards, skills, and contact panel.
 - `src/pages/index.astro` composes the home page.
 - `src/pages/work/knowledge-nebula.astro` contains the full case study.
-- `public/styles.css` and `public/site.js` provide progressive enhancement with no framework runtime.
+- `public/styles.css` and `public/site.js` provide progressive enhancement with no client framework runtime.
 
-Because the current GitHub Pages setup serves committed root files, `scripts/generate-static-fallback.mjs` generates matching root HTML files from the same data module. This preserves the existing deployment immediately after merge while the included GitHub Pages workflow can deploy Astro’s `dist/` output. The generated root fallback is transitional and clearly documented.
+The current GitHub Pages setup serves committed root files. `scripts/generate-static-fallback.mjs` generates matching root HTML from the same data module and synchronizes shared public assets. This keeps the proven branch-based publishing path intact while still making Astro the maintainable source architecture.
 
 ## SEO and discovery
 
@@ -63,7 +63,7 @@ The project includes `robots.txt`, `sitemap.xml`, `CNAME`, and a lightweight SVG
 
 ## Privacy
 
-The public phone number is removed from all source and generated HTML. The public contact surface contains the existing email address and LinkedIn profile. The downloadable resume remains available as `/Chris-Johnson-Resume.pdf`; the PDF itself still contains the contact details Chris chose for job applications.
+The public phone number is removed from source and generated web pages. The public contact surface contains email, LinkedIn, and GitHub. The downloadable résumé remains available as `/Chris-Johnson-Resume.pdf`; the PDF retains the contact details Chris uses for job applications.
 
 ## Accessibility and interaction
 
@@ -71,13 +71,13 @@ The site retains a skip link, semantic landmarks, keyboard-visible focus states,
 
 ## Testing and deployment
 
-Node’s built-in test runner verifies the content contract before Astro build:
+Node’s built-in test runner verifies:
 
-- Correct title and Google end date.
+- Correct positioning and Google end date.
 - No current-employment language or unsupported claims.
 - No telephone links or public phone number in web source/output.
-- Resume, live demo, case-study, GitHub, email, and LinkedIn links exist.
-- Dedicated Knowledge Nebula route and SEO files exist.
-- Generated fallback HTML stays synchronized with the data module.
+- Résumé, live demo, case-study, GitHub, email, and LinkedIn links.
+- Dedicated Knowledge Nebula route and SEO files.
+- Maintainer scripts and CI behavior.
 
-GitHub Actions runs the content tests and Astro build on pull requests. On pushes to `main`, the same workflow uploads and deploys `dist/` to GitHub Pages.
+GitHub Actions runs the content tests, regenerates the fallback and fails on drift, and builds the Astro production site on pull requests and pushes to `main`. GitHub Pages continues publishing the verified root fallback from `main`, avoiding an unrequested repository-settings migration.

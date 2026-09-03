@@ -1,0 +1,21 @@
+{
+  "name": "chris-johnson-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "node --test tests/*.test.mjs",
+    "generate:fallback": "node scripts/generate-static-fallback.mjs",
+    "verify": "npm test && npm run check:fallback && npm run build",
+    "check:fallback": "npm run generate:fallback && git diff --exit-code -- index.html styles.css site.js favicon.svg CNAME robots.txt sitemap.xml work/knowledge-nebula/index.html"
+  },
+  "devDependencies": {
+    "astro": "7.2.10"
+  }
+}
