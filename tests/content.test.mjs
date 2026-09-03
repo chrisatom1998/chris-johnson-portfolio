@@ -85,7 +85,7 @@ test('project scripts and maintainer docs define the supported update flow', asy
   assert.match(readme, /Generated files/);
 });
 
-test('CI verifies source, generated fallback, and the Astro production build', async () => {
+test('CI verifies pull requests and deploys successful main builds to GitHub Pages', async () => {
   const workflow = await readText('.github/workflows/pages.yml');
   assert.match(workflow, /pull_request:/);
   assert.match(workflow, /branches:\s*\[main\]/);
@@ -95,5 +95,12 @@ test('CI verifies source, generated fallback, and the Astro production build', a
   assert.match(workflow, /npm run generate:fallback/);
   assert.match(workflow, /git diff --exit-code/);
   assert.match(workflow, /npm run build/);
-  assert.doesNotMatch(workflow, /deploy-pages/);
+  assert.match(workflow, /actions\/configure-pages@v5/);
+  assert.match(workflow, /actions\/upload-pages-artifact@v3/);
+  assert.match(workflow, /path:\s*\.\/dist/);
+  assert.match(workflow, /actions\/deploy-pages@v4/);
+  assert.match(workflow, /github\.event_name == 'push'/);
+  assert.match(workflow, /github\.ref == 'refs\/heads\/main'/);
+  assert.match(workflow, /pages:\s*write/);
+  assert.match(workflow, /id-token:\s*write/);
 });
