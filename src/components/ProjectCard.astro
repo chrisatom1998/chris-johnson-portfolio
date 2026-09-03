@@ -1,0 +1,49 @@
+---
+const { project, featured = false } = Astro.props;
+---
+
+<article class:list={['project-card', featured && 'project-card-featured']} data-reveal>
+  <div class="project-content">
+    <div>
+      <p class="eyebrow">{project.eyebrow}</p>
+      <h3>{project.title}</h3>
+      <p class="project-subtitle">{project.subtitle}</p>
+      <p>{project.description}</p>
+      <p class="project-outcome">{project.outcome}</p>
+    </div>
+    <div>
+      <ul class="tag-list" aria-label={`${project.title} technologies`}>
+        {project.tags.map((tag) => <li>{tag}</li>)}
+      </ul>
+      <div class="project-links">
+        {project.caseStudyUrl && <a class="button button-primary" href={project.caseStudyUrl}>Read case study</a>}
+        {project.liveUrl && <a class="button button-secondary" href={project.liveUrl} target="_blank" rel="noreferrer">Live demo ↗</a>}
+        {project.repoUrl && <a class="text-link" href={project.repoUrl} target="_blank" rel="noreferrer">GitHub ↗</a>}
+      </div>
+    </div>
+  </div>
+
+  {project.image ? (
+    <div class="project-image-wrap">
+      <img
+        class="project-image"
+        src={project.image}
+        alt={project.imageAlt}
+        width="1600"
+        height="560"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+  ) : (
+    <div class="sim-visual" aria-hidden="true">
+      <div class="sim-globe"></div>
+      <div class="sim-axis axis-one"></div>
+      <div class="sim-axis axis-two"></div>
+      <span class="sim-dot dot-one"></span>
+      <span class="sim-dot dot-two"></span>
+      <span class="sim-dot dot-three"></span>
+      <p>economy&nbsp;&nbsp;·&nbsp;&nbsp;politics&nbsp;&nbsp;·&nbsp;&nbsp;military</p>
+    </div>
+  )}
+</article>

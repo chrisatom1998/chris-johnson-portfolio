@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { portfolio } from '../../data/portfolio.js';
+
+const project = portfolio.projects.find((item) => item.slug === 'knowledge-nebula');
+const title = `Knowledge Nebula case study — ${portfolio.name}`;
+const description =
+  'How Chris Johnson built a local-first, evidence-backed document graph with client-side AI, explainable relationships, IndexedDB workspaces, and OpenUSD export.';
+const softwareSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Knowledge Nebula / Document Graph Explorer',
+  applicationCategory: 'ProductivityApplication',
+  operatingSystem: 'Web, macOS, Windows, Linux',
+  url: project.liveUrl,
+  codeRepository: project.repoUrl,
+  description: project.description,
+  author: {
+    '@type': 'Person',
+    name: portfolio.name,
+    url: portfolio.siteUrl,
+  },
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath="/work/knowledge-nebula/"
+  schema={softwareSchema}
+>
+  <article class="case-study">
+    <header class="case-hero shell" data-reveal>
+      <a class="back-link" href="/#work">← Back to selected work</a>
+      <p class="eyebrow">Engineering case study · Shipped product</p>
+      <h1>Knowledge Nebula</h1>
+      <p class="case-deck">{project.description}</p>
+      <p class="case-intro">{project.caseStudy.intro}</p>
+      <div class="button-row">
+        <a class="button button-primary" href={project.liveUrl} target="_blank" rel="noreferrer">Open live app ↗</a>
+        <a class="button button-secondary" href={project.repoUrl} target="_blank" rel="noreferrer">View source ↗</a>
+      </div>
+    </header>
+
+    <section class="case-media shell" aria-label="Knowledge Nebula product visual" data-reveal>
+      <img
+        src={project.image}
+        alt={project.imageAlt}
+        width="1600"
+        height="560"
+        decoding="async"
+      />
+    </section>
+
+    <section class="case-facts shell" aria-label="Project facts">
+      {project.caseStudy.facts.map((fact) => (
+        <article data-reveal>
+          <p>{fact.label}</p>
+          <strong>{fact.value}</strong>
+        </article>
+      ))}
+    </section>
+
+    <div class="case-sections shell">
+      {project.caseStudy.sections.map((section) => (
+        <section class="case-section" data-reveal>
+          <div>
+            <p class="eyebrow">{section.eyebrow}</p>
+            <h2>{section.heading}</h2>
+          </div>
+          <div class="body-copy">
+            {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+          </div>
+        </section>
+      ))}
+    </div>
+
+    <section class="case-cta shell" data-reveal>
+      <p class="eyebrow">Explore it yourself</p>
+      <h2>The graph is more useful when you can interrogate it.</h2>
+      <div class="button-row">
+        <a class="button button-primary" href={project.liveUrl} target="_blank" rel="noreferrer">Try the live app ↗</a>
+        <a class="button button-secondary" href={project.repoUrl} target="_blank" rel="noreferrer">Read the repository ↗</a>
+        <a class="text-link" href={portfolio.contact.emailUrl}>Ask me about the build</a>
+      </div>
+    </section>
+  </article>
+</BaseLayout>

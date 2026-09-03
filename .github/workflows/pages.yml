@@ -1,0 +1,49 @@
+name: Verify portfolio
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.12.0
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Verify content contract
+        run: npm test
+
+      - name: Verify committed fallback pages are current
+        run: |
+          npm run generate:fallback
+          git diff --exit-code -- \
+            index.html \
+            styles.css \
+            site.js \
+            favicon.svg \
+            CNAME \
+            robots.txt \
+            sitemap.xml \
+            work/knowledge-nebula/index.html
+
+      - name: Build Astro site
+        run: npm run build
