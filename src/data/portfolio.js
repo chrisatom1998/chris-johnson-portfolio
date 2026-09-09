@@ -1,17 +1,17 @@
 export const portfolio = {
   name: 'Chris Johnson',
   siteUrl: 'https://www.chrisjohnson.solutions',
-  pageTitle: 'Chris Johnson — Technical Solutions Consultant',
+  pageTitle: 'Chris Johnson — Solutions Architect',
   description:
-    'Chris Johnson is an AdTech solutions engineer and technical solutions consultant who turns complex platform, cloud, AI, and data problems into systems teams can ship.',
-  positioning: 'AdTech Solutions Engineer · Technical Solutions Consultant',
+    'Chris Johnson is a Solutions Architect and technical consultant with 4+ years at Google and Microsoft delivering Generative AI and analytics on Google Cloud and Azure.',
+  positioning: 'Solutions Architect · Technical Solutions Consultant',
   resumeUrl: '/Chris-Johnson-Resume.pdf',
   hero: {
-    kicker: 'Customer-facing architecture · Data systems · AI products',
-    title: 'I turn messy platform problems into systems teams can ship.',
+    kicker: 'Long Beach, CA · Google Cloud · Azure · Generative AI',
+    title: 'Solutions architecture for cloud, AI, and analytics systems.',
     body:
-      'Four years across Google and Microsoft, combining customer discovery, hands-on engineering, and cross-functional delivery. I work comfortably from SQL and APIs to architecture decisions and executive-ready recommendations.',
-    note: 'Open to technical solutions, solutions consulting, customer engineering, and AI/data platform roles.',
+      'Technical consultant and solutions architect with 4+ years at Google and Microsoft delivering Generative AI and analytics on Google Cloud and Azure. Most recently drove monetization diagnostics for Firebase publishers—combining SQL analysis, Python/Next.js tooling, and API-level integrations to unblock revenue for strategic accounts.',
+    note: 'Trusted by product, engineering, and sales partners to translate business metrics into production-ready architecture.',
   },
   contact: {
     email: 'Chrismjohnson19@gmail.com',
@@ -23,43 +23,43 @@ export const portfolio = {
   },
   metrics: [
     {
-      value: '50+',
-      label: 'mobile app publishers supported at Google',
+      value: '4+',
+      label: 'years at Google and Microsoft',
+    },
+    {
+      value: '8',
+      label: 'strategic AdMob and Firebase accounts',
     },
     {
       value: '50%',
-      label: 'less manual QA and faster report turnaround',
+      label: 'faster report turnaround for strategic accounts',
     },
     {
-      value: '50+',
-      label: 'enterprise customers supported at Microsoft',
-    },
-    {
-      value: '≈10 hrs',
-      label: 'of repetitive work removed each week',
+      value: '10',
+      label: 'enterprise accounts at Microsoft, including Wawa',
     },
   ],
   about: {
     eyebrow: 'About',
-    heading: 'Technical depth, translated into customer outcomes.',
+    heading: 'Technical consultant and solutions architect with 4+ years at Google and Microsoft.',
     paragraphs: [
-      'I am a customer-facing technical builder with experience across advertising platforms, cloud architecture, AI applications, analytics, and workflow automation. My best work usually starts with an ambiguous customer or platform problem and ends with a solution people can understand, operate, and reuse.',
-      'At Google, I supported mobile app publishers across Firebase and advertising workflows. Before that, I helped enterprise customers design and deliver cloud and AI solutions at Microsoft. I earned a B.S. in Computer Science from Georgia Tech.',
+      'I deliver Generative AI and analytics solutions on Google Cloud and Azure. Most recently I drove monetization diagnostics for Firebase publishers—combining SQL analysis, Python/Next.js tooling, and API-level integrations to unblock revenue for strategic accounts.',
+      'Trusted by product, engineering, and sales partners to translate business metrics into production-ready architecture. B.S. Computer Science, Georgia Institute of Technology — Atlanta, GA · May 2022.',
     ],
   },
   experience: [
     {
       company: 'Google',
-      title: 'AdTech Solutions Engineer (Technical Solutions Consultant)',
-      dates: '04/2025 — 07/2026',
+      title: 'Technical Solutions Consultant',
+      dates: '04/2025 — 09/2026',
       location: 'Irvine, California',
       summary:
-        'Publisher-facing technical solution engineering across mobile advertising, Firebase, data analysis, APIs, and product troubleshooting.',
+        'Technical lead for publisher monetization across strategic AdMob and Firebase accounts.',
       bullets: [
-        'Led technical solution engineering for 50+ mobile app publishers, partnering with Product, Engineering, Sales, and Business Development to improve monetization, resolve integration issues, and prioritize product opportunities.',
-        'Analyzed publisher and ad-performance data with SQL, then built TypeScript and Next.js dashboards and diagnostic tools that reduced manual QA and report turnaround time by 50%.',
-        'Designed API and data workflows that unified publisher tracking, debugging, and opportunity identification across the AdTech stack.',
-        'Translated platform constraints, performance signals, publisher needs, and product behavior into clear technical recommendations for customer and internal decisions.',
+        'Served as technical lead for publisher monetization across a portfolio of 8 strategic AdMob and Firebase accounts, partnering with Product, Engineering, Sales, and BD to diagnose yield, mediation, open bidding, and latency issues with SQL-backed analysis and ship fixes into production.',
+        'Diagnosed root causes of publisher revenue drops and shipped fixes that restored monetization to pre-incident levels or higher across the strategic book, protecting recurring ad revenue for high-value accounts.',
+        'Cut report turnaround ~50% for strategic accounts by building Python/SQL internal tools and Next.js/TypeScript dashboards that automated performance insights and revenue diagnostics.',
+        'Validated and shipped API-level integrations against AdMob and Firebase APIs—unblocking data-readiness issues and accelerating debugging for live publisher systems.',
       ],
     },
     {
@@ -68,24 +68,25 @@ export const portfolio = {
       dates: '08/2022 — 03/2025',
       location: 'Irvine, California',
       summary:
-        'Cloud and AI solution architecture for enterprise customers using Azure, Power Platform, Dynamics 365, and custom applications.',
+        'Customer-facing cloud and AI solution architecture for enterprise accounts on Azure, Power Platform, and Dynamics 365.',
       bullets: [
-        'Architected and delivered AI models, virtual agents, and custom enterprise applications across Azure, Power Platform, and Dynamics 365 for 50+ customers.',
-        'Led technical discovery and solution-design discussions, helping customers work through ambiguous modernization decisions, architecture trade-offs, implementation, and adoption.',
-        'Built Azure Functions and reusable workflow automation that saved approximately 10 hours of manual work each week and improved delivery consistency.',
+        'Customer-facing Cloud Solution Architect for a portfolio of 10 enterprise accounts (including Wawa)—designed Generative AI solutions, virtual agents, and custom apps on Azure, Power Platform, and Dynamics 365.',
+        'Delivered POC-to-production Azure Functions and workflow automation in the Value-Based Delivery catalog, improving operational efficiency for large multinational clients.',
+        'Advised on secure cloud migrations and data-driven architectures with virtual account teams; communicated trade-offs clearly to both technical champions and business stakeholders.',
+        'Built credibility as a trusted advisor on AI and cloud patterns—helping customers modernize analytics and decisioning without overselling experimental approaches.',
       ],
     },
   ],
   projects: [
     {
       slug: 'knowledge-nebula',
-      eyebrow: 'Flagship project · Shipped',
+      eyebrow: 'Flagship project · 2026',
       title: 'Knowledge Nebula',
       subtitle: 'Document Graph Explorer',
       description:
-        'A private, local-first 2D/3D knowledge map that turns documents and source repositories into an explorable, evidence-backed graph.',
+        'A privacy-first, browser-based application that transforms document collections into explorable 3D knowledge graphs, with AI analysis performed entirely on-device.',
       outcome:
-        'Parsing, OCR, embeddings, similarity, clustering, search, and rendering run client-side by default. Users can inspect why documents are connected instead of trusting an unexplained similarity score.',
+        'Client-side architecture uses web workers for non-blocking document processing, embeddings, similarity analysis, and clustering; corpora persist locally in IndexedDB.',
       tags: ['TypeScript', 'React', 'On-device AI', 'Web Workers', 'IndexedDB', 'OpenUSD'],
       image: '/assets/knowledge-nebula-orbit-transparent.webp',
       imageAlt:
@@ -148,14 +149,14 @@ export const portfolio = {
     },
     {
       slug: 'geopolitical-simulator',
-      eyebrow: 'Systems project',
+      eyebrow: 'Systems project · 2026',
       title: 'Geopolitical Simulator',
       subtitle: 'World Conquest',
       description:
-        'A browser-based simulation where players manage a real-world nation across economic, political, and military systems.',
+        'A Vite-based geopolitical simulator that models real-world nations’ economic, political, and military systems; country data is queried with SQL to drive game-state decisions.',
       outcome:
-        'The project explores data modeling, interconnected game-state logic, and the trade-offs that emerge when several systems react to the same player decisions.',
-      tags: ['JavaScript', 'Simulation', 'State modeling', 'Game systems'],
+        'A modular TypeScript rules engine handles policy, trade, and conflict interactions, enabling rapid iteration on simulation scenarios.',
+      tags: ['Vite', 'TypeScript', 'SQL', 'Simulation', 'Game systems'],
       image: null,
       imageAlt: '',
       caseStudyUrl: null,
@@ -165,20 +166,16 @@ export const portfolio = {
   ],
   skillGroups: [
     {
-      label: 'Customer-facing architecture',
-      skills: ['Technical discovery', 'Solution design', 'Stakeholder alignment', 'Technical troubleshooting', 'Executive communication'],
+      label: 'Languages & Frameworks',
+      skills: ['Python', 'SQL', 'TypeScript', 'JavaScript', 'React', 'Next.js', 'Node.js'],
     },
     {
-      label: 'Data and analytics',
-      skills: ['SQL', 'BigQuery', 'Python', 'Pandas', 'Data pipelines', 'Performance analysis'],
+      label: 'Cloud & Data',
+      skills: ['Google Cloud', 'Azure', 'Firebase', 'AdMob', 'BigQuery', 'Azure OpenAI', 'Power Platform', 'Dynamics 365'],
     },
     {
-      label: 'Cloud and platforms',
-      skills: ['Google Cloud', 'Azure', 'Firebase', 'AdMob', 'Power Platform', 'Dynamics 365', 'APIs'],
-    },
-    {
-      label: 'Application development',
-      skills: ['TypeScript', 'JavaScript', 'React', 'Next.js', 'C#', 'Java', 'Azure Functions', 'Generative AI'],
+      label: 'AI & Architecture',
+      skills: ['Generative AI', 'RAG', 'Solution Architecture', 'Cloud Architecture', 'Full-Stack Development', 'DevOps', 'IAM'],
     },
   ],
 };
