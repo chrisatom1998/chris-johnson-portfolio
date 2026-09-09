@@ -1,8 +1,8 @@
 %PDF-1.4
-% ReportLab Generated PDF document     (opensource)
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
 <<
-/F1 2 0 R /F2 3 0 R
+/F1 2 0 R /F2 3 0 R /F3 7 0 R
 >>
 endobj
 2 0 obj
@@ -17,314 +17,88 @@ endobj
 endobj
 4 0 obj
 <<
-/Contents 8 0 R /MediaBox [ 0 0 612 792 ] /Parent 7 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
+/A <<
+/S /URI /Type /Action /URI (mailto:chrismjohnson19@gmail.com)
+>> /Border [ 0 0 0 ] /Rect [ 230.9785 710.6 355.704 722 ] /Subtype /Link /Type /Annot
 >>
 endobj
 5 0 obj
 <<
-/PageMode /UseNone /Pages 7 0 R /Type /Catalog
+/A <<
+/S /URI /Type /Action /URI (https://www.linkedin.com/in/christopherjohnson98)
+>> /Border [ 0 0 0 ] /Rect [ 368.738 710.6 525.0225 722 ] /Subtype /Link /Type /Annot
 >>
 endobj
 6 0 obj
 <<
-/Author (Chris Johnson) /CreationDate (D:20000101000000+00'00') /Creator (anonymous) /Keywords () /ModDate (D:20000101000000+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (AdTech Solutions Engineer resume) /Title (Chris Johnson - AdTech Solutions Engineer) /Trapped /False
+/A <<
+/S /URI /Type /Action /URI (https://www.chrisjohnson.solutions/)
+>> /Border [ 0 0 0 ] /Rect [ 259.2742 698.6 352.7257 710 ] /Subtype /Link /Type /Annot
 >>
 endobj
 7 0 obj
 <<
-/Count 1 /Kids [ 4 0 R ] /Type /Pages
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
 >>
 endobj
 8 0 obj
 <<
-/Length 10113
+/Annots [ 4 0 R 5 0 R 6 0 R ] /Contents 12 0 R /MediaBox [ 0 0 612 792 ] /Parent 11 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+9 0 obj
+<<
+/PageMode /UseNone /Pages 11 0 R /Type /Catalog
+>>
+endobj
+10 0 obj
+<<
+/Author (Perplexity Computer) /CreationDate (D:20260909120848+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260909120848+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (Chris Johnson \204 Resume 2026) /Trapped /False
+>>
+endobj
+11 0 obj
+<<
+/Count 1 /Kids [ 8 0 R ] /Type /Pages
+>>
+endobj
+12 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 3417
 >>
 stream
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
-1 .992157 .972549 rg
-n 0 0 612 792 re f*
-BT /F2 23 Tf 27.6 TL ET
-.090196 .078431 .058824 rg
-BT 1 0 0 1 36 742 Tm (CHRIS JOHNSON) Tj T* ET
-BT /F2 9.2 Tf 11.04 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 36 724 Tm (AdTech Solutions Engineer | Technical Solutions Consultant) Tj T* ET
-BT /F1 7.8 Tf 9.36 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 36 707 Tm (Irvine, CA  |  Chrismjohnson19@gmail.com  |  678-642-6551) Tj T* ET
-BT /F1 7.8 Tf 9.36 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 36 695 Tm (linkedin.com/in/christopherjohnson98  |  chrisjohnson.solutions  |  github.com/chrisatom1998) Tj T* ET
-.811765 .768627 .709804 RG
-.6 w
-n 36 684 m 576 684 l S
-BT /F2 7.2 Tf 8.64 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 36 668 Tm (PROFILE) Tj T* ET
-BT /F1 8 Tf 9.6 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 36 656 Tm (Customer-facing technical solutions professional with nearly four years at Google and Microsoft) Tj T* ET
-BT /F1 8 Tf 9.6 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 36 645.9 Tm (delivering publisher-facing advertising solutions, cloud platforms, APIs, data products, and scalable) Tj T* ET
-BT /F1 8 Tf 9.6 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 36 635.8 Tm (automation. Experienced in mobile app monetization, technical integrations, performance analysis,) Tj T* ET
-BT /F1 8 Tf 9.6 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 36 625.7 Tm (and troubleshooting across Firebase, Google Cloud, Azure, SQL, and modern full-stack systems.) Tj T* ET
-.811765 .768627 .709804 RG
-.6 w
-n 36 610.6 m 576 610.6 l S
-BT /F2 7.2 Tf 8.64 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 36 594.6 Tm (EXPERIENCE) Tj T* ET
-BT /F2 9.2 Tf 11.04 TL ET
-.090196 .078431 .058824 rg
-BT 1 0 0 1 36 579.6 Tm (GOOGLE) Tj T* ET
-BT /F2 8.2 Tf 9.84 TL ET
-.090196 .078431 .058824 rg
-BT 1 0 0 1 88 579.6 Tm (AdTech Solutions Engineer \(Technical Solutions Consultant\)) Tj T* ET
-BT /F1 7.4 Tf 8.88 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 36 567.6 Tm (04/2025 - 07/2026  |  Irvine, CA) Tj T* ET
-BT /F2 7.75 Tf 9.3 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 36 550.6 Tm (-) Tj T* ET
-BT /F1 7.75 Tf 9.3 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 47 550.6 Tm (Led technical solution engineering for 50+ mobile app publishers, partnering with Product,) Tj T* ET
-BT /F1 7.75 Tf 9.3 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 47 541 Tm (Engineering, Sales, and Business Development to improve monetization, resolve integration issues,) Tj T* ET
-BT /F1 7.75 Tf 9.3 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 47 531.4 Tm (and prioritize product opportunities.) Tj T* ET
-BT /F2 7.75 Tf 9.3 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 36 520.3 Tm (-) Tj T* ET
-BT /F1 7.75 Tf 9.3 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 47 520.3 Tm (Analyzed publisher and ad-performance data with SQL, then built TypeScript and Next.js dashboards) Tj T* ET
-BT /F1 7.75 Tf 9.3 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 47 510.7 Tm (and diagnostic tools that reduced manual QA and report turnaround time by 50%.) Tj T* ET
-BT /F2 7.75 Tf 9.3 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 36 499.6 Tm (-) Tj T* ET
-BT /F1 7.75 Tf 9.3 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 47 499.6 Tm (Designed API and data workflows that unified publisher tracking, debugging, and opportunity) Tj T* ET
-BT /F1 7.75 Tf 9.3 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 47 490 Tm (identification across the AdTech stack.) Tj T* ET
-BT /F2 7.75 Tf 9.3 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 36 478.9 Tm (-) Tj T* ET
-BT /F1 7.75 Tf 9.3 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 47 478.9 Tm (Translated platform constraints, performance signals, publisher needs, and product behavior into) Tj T* ET
-BT /F1 7.75 Tf 9.3 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 47 469.3 Tm (clear technical recommendations for customer and internal decisions.) Tj T* ET
-BT /F2 9.2 Tf 11.04 TL ET
-.090196 .078431 .058824 rg
-BT 1 0 0 1 36 453.2 Tm (MICROSOFT) Tj T* ET
-BT /F2 8.2 Tf 9.84 TL ET
-.090196 .078431 .058824 rg
-BT 1 0 0 1 102 453.2 Tm (Cloud Solution Architect) Tj T* ET
-BT /F1 7.4 Tf 8.88 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 36 441.2 Tm (08/2022 - 03/2025  |  Irvine, CA) Tj T* ET
-BT /F2 7.75 Tf 9.3 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 36 424.2 Tm (-) Tj T* ET
-BT /F1 7.75 Tf 9.3 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 47 424.2 Tm (Architected and delivered AI models, virtual agents, and custom enterprise applications across Azure,) Tj T* ET
-BT /F1 7.75 Tf 9.3 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 47 414.6 Tm (Power Platform, and Dynamics 365 for 50+ customers.) Tj T* ET
-BT /F2 7.75 Tf 9.3 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 36 403.5 Tm (-) Tj T* ET
-BT /F1 7.75 Tf 9.3 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 47 403.5 Tm (Led technical discovery and solution-design discussions, helping customers work through ambiguous) Tj T* ET
-BT /F1 7.75 Tf 9.3 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 47 393.9 Tm (modernization decisions, architecture trade-offs, implementation, and adoption.) Tj T* ET
-BT /F2 7.75 Tf 9.3 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 36 382.8 Tm (-) Tj T* ET
-BT /F1 7.75 Tf 9.3 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 47 382.8 Tm (Built Azure Functions and reusable workflow automation that saved approximately 10 hours of) Tj T* ET
-BT /F1 7.75 Tf 9.3 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 47 373.2 Tm (manual work each week and improved delivery consistency.) Tj T* ET
-BT /F2 7.2 Tf 8.64 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 420 668 Tm (CORE STRENGTHS) Tj T* ET
-BT /F1 7.8 Tf 9.36 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 657 Tm (Technical discovery) Tj T* ET
-BT /F1 7.8 Tf 9.36 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 646 Tm (Solution architecture) Tj T* ET
-BT /F1 7.8 Tf 9.36 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 635 Tm (AdTech and monetization) Tj T* ET
-BT /F1 7.8 Tf 9.36 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 624 Tm (SQL and performance analysis) Tj T* ET
-BT /F1 7.8 Tf 9.36 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 613 Tm (API integrations) Tj T* ET
-BT /F1 7.8 Tf 9.36 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 602 Tm (Cross-functional delivery) Tj T* ET
-BT /F1 7.8 Tf 9.36 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 591 Tm (Customer troubleshooting) Tj T* ET
-BT /F1 7.8 Tf 9.36 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 580 Tm (Executive communication) Tj T* ET
-BT /F2 7.2 Tf 8.64 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 420 561 Tm (TECHNOLOGY) Tj T* ET
-BT /F2 7.6 Tf 9.12 TL ET
-.090196 .078431 .058824 rg
-BT 1 0 0 1 420 550 Tm (Data) Tj T* ET
-BT /F1 7.6 Tf 9.12 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 540 Tm (SQL, BigQuery, Python, Pandas) Tj T* ET
-BT /F2 7.6 Tf 9.12 TL ET
-.090196 .078431 .058824 rg
-BT 1 0 0 1 420 525.5 Tm (Cloud) Tj T* ET
-BT /F1 7.6 Tf 9.12 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 515.5 Tm (Google Cloud, Azure, Firebase) Tj T* ET
-BT /F2 7.6 Tf 9.12 TL ET
-.090196 .078431 .058824 rg
-BT 1 0 0 1 420 501 Tm (Apps) Tj T* ET
-BT /F1 7.6 Tf 9.12 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 491 Tm (TypeScript, JavaScript, React, Next.js) Tj T* ET
-BT /F2 7.6 Tf 9.12 TL ET
-.090196 .078431 .058824 rg
-BT 1 0 0 1 420 476.5 Tm (Platforms) Tj T* ET
-BT /F1 7.6 Tf 9.12 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 466.5 Tm (AdMob, Power Platform, Dynamics 365) Tj T* ET
-BT /F2 7.6 Tf 9.12 TL ET
-.090196 .078431 .058824 rg
-BT 1 0 0 1 420 452 Tm (Other) Tj T* ET
-BT /F1 7.6 Tf 9.12 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 442 Tm (C#, Java, Azure Functions, APIs, GenAI) Tj T* ET
-BT /F2 7.2 Tf 8.64 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 420 424.5 Tm (EDUCATION) Tj T* ET
-BT /F2 8.1 Tf 9.72 TL ET
-.090196 .078431 .058824 rg
-BT 1 0 0 1 420 413.5 Tm (Georgia Institute of Technology) Tj T* ET
-BT /F1 7.8 Tf 9.36 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 402.5 Tm (B.S. Computer Science) Tj T* ET
-BT /F1 7.5 Tf 9 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 392.5 Tm (2016 - 2022 | Atlanta, GA) Tj T* ET
-BT /F2 7.2 Tf 8.64 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 420 371.5 Tm (SELECTED PROJECTS) Tj T* ET
-BT /F2 8.1 Tf 9.72 TL ET
-.090196 .078431 .058824 rg
-BT 1 0 0 1 420 360.5 Tm (Knowledge Nebula) Tj T* ET
-BT /F1 7.5 Tf 9 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 349.5 Tm (Privacy-first document graph with on-device) Tj T* ET
-BT /F1 7.5 Tf 9 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 340.3 Tm (parsing, embeddings, clustering, search, and) Tj T* ET
-BT /F1 7.5 Tf 9 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 331.1 Tm (2D/3D exploration.) Tj T* ET
-BT /F2 8.1 Tf 9.72 TL ET
-.090196 .078431 .058824 rg
-BT 1 0 0 1 420 314.9 Tm (Geopolitical Simulator) Tj T* ET
-BT /F1 7.5 Tf 9 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 303.9 Tm (Browser simulation spanning real-world) Tj T* ET
-BT /F1 7.5 Tf 9 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 420 294.7 Tm (economic, political, and military systems.) Tj T* ET
-BT /F2 7.2 Tf 8.64 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 420 264.5 Tm (PROOF POINTS) Tj T* ET
-BT /F2 11 Tf 13.2 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 420 253.5 Tm (50+) Tj T* ET
-BT /F1 7.4 Tf 8.88 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 465 254.5 Tm (publishers supported) Tj T* ET
-BT /F2 11 Tf 13.2 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 420 236.5 Tm (50%) Tj T* ET
-BT /F1 7.4 Tf 8.88 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 465 237.5 Tm (faster QA and reporting) Tj T* ET
-BT /F2 11 Tf 13.2 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 420 219.5 Tm (50+) Tj T* ET
-BT /F1 7.4 Tf 8.88 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 465 220.5 Tm (enterprise customers) Tj T* ET
-BT /F2 11 Tf 13.2 TL ET
-.596078 .290196 .211765 rg
-BT 1 0 0 1 420 202.5 Tm (10 hrs) Tj T* ET
-BT /F1 7.4 Tf 8.88 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 465 203.5 Tm (manual work saved weekly) Tj T* ET
-.811765 .768627 .709804 RG
-.6 w
-n 36 34 m 576 34 l S
-BT /F2 7.3 Tf 8.76 TL ET
-.090196 .078431 .058824 rg
-BT 1 0 0 1 36 21 Tm (Portfolio: www.chrisjohnson.solutions) Tj T* ET
-BT /F1 7.3 Tf 8.76 TL ET
-.372549 .345098 .309804 rg
-BT 1 0 0 1 421 21 Tm (Updated September 2026) Tj T* ET
- 
-endstream
+Gb!;fD0+Gk%fY<lJM5XFhV"nT>CO,3\\,>62JLUZgV'*@(L!PEDCJGZW2/k:gi#E-P[ldtib"\9br2-FQ73@J*WQ_Dps@&'hu8X6JAW8;GiaQ"^ha&Ncl9jg$r1E\^-)"fQ,BR;^c31jEkL]5I=F<KiV'<IStRRIOcFH[PT2qr,mPZXl]7t#GV[7AB/+LgQ<G!l7P1r5AO"#t=.&q,H5gWrOn\Wl9:=1LEka@O?9cV@i(q%*0EH[]%K%?%'SbYpRfrMp^*MYE(C#?Gl]6f%q";KiJ)H#H33KI3\rG14TgCeJ0_P^7@H`q%)kL2J:?gL:GQ[h]lW#=Z3E'&^LR^fV/fYl3f^j=dlWsQ\j%4/G%!n[&oXDQAYBN&03Y>LQrRG'%TDg?4R?1aN;Kq:eC-?qt.C.8^()_sY+gMo-DklkLf9HEdab.()dGRe%D`!lBSUpMV\_>C\PUqej=j`nBnaV%3Re.\VESl=t:laP;b8gdJ=$N=L++3iZ^&8uKN@/t7gG+@#r:1<2WJkoaeKUIM9d)psNpn'?EgP9`l4"eX%L`ts$j*TT"26_!kEtdQR>H_kLsVTe1b:GuZ5=Jf"4PXq(`jR)&S;?eJ&$ptNRnWP<[s6eY!3_b<eX]oLq+5O>RQ5bCS#Oj%"<k^;nJ!"9Wj>1)TR!O)l]nSGU-9,g[tg/9$KLY=+p\",G#d`JljOfR&Z)anVtr@&.=e7\-OCu6>:Zj1nV++6XJ'7-kNGuV]Zg$K]aO(eZRc$2(D_)$;kp(Eb1OdHh!,G2;YM?(o7fB8_9q^H.nJ[RS+3[iJD/ACSRQHk#+X?;8I%>Q/!ic(gOii&HRe6<G&,t@&D,an/1:<aL-oKaE/@AGa=/E>I1m-$7:$!3R\1LBX^9a=WpWlbf^&((BpViBK@n`UhZ<r<DRZOYL]9i)t&9W+$:6:pB8Oke$HB]I2hmnaeQmGLmc3(Ch\bA$?)p5n+YF[hNr(Cq;\_C!,CDSjnlG>YHA13,`rtEi4;_P)9\2+-0X%Fn4L$Oh^JH6pnurJ'q_$(M-[u4(M9_<?U\/ZV@.=p265Va_"*(1'jU9gME/CbP%)2WEjlRr8Vk-R[(T]kGRhd<YT6bZkDQK9(>U>2nNqW+k$9q\anq7e<ODl\Eh4;A@^N0TY2L!\$6qIr_XT*c.>?5Y'RmM#7m7u5gP1`&4dH[qBtr&QR!bOD5q<o@11`OK,I@qe,P\:oN-@?RZt5o(9.>3hL10@/VSoG('GGST5$[.Sa3tki$F>?IgXb^26kO"7F%j:SVu,o.(ZB=8g\Jl'e1VU[hSRCL02Fd%T"I-GfsgRgo,fhgNR2sE+4^b-Dm)7iDo6.=W"Uc=Jf:2$5j)rnU-A$oTQ%0B%>6W,]8tC2l>%q;6uMJ#hdGAh6)4)._D]`h8jBfKMVmlL6.hgZ&BZj5IAH=6g.-,$F8@^s2]<X9\!/,T<S7mih>]Q:);N-"Xr7Lce8V?j-><d/2R+=((4<A[[W"1D5&%SY4-)pr7n_0n[-c)sIns[eiqaQ2%7>`qfL$kYYT0V#?CP2Z&Q;*s#eABNH)4?1(/P%:a_./9MaQ/cDJ;s8ltT_3"lSg/A5gl(,(>ir?<6\+:>3)@MC=g$?\c\?\11P$@3rG%!g@(8AC&U+Kf'"q,*!VZ7a*EA<Zm9o`;37+2!b^QG]/UfP#i&/aeg;.99I+YI-"QHD@^(nL/%O>"3V0XZp+i9(icmOLEbiiZ=OGJ.0C/4$Tp:-IZ9MZ59mqhfCm>V(2"ht`1CHH-^nO(Wc?DjaK.+A:LoT\.Kl'Jj*nSJCS/o!K#gh8W5Ed>XO(^J]S4D:;P1S^/ZOMX.dTl%D=N>4Dta8X[Wfu,\OPpLf+.Z6/f+>ZY5Q)?g%,!""Pa3uF;U$d11KFFUumW1)3>\G9]Ij;pg;\RgE!C-F[5Or8.(s"kJ@e8N>:;'D<'^h:iY5+CC1J)/!b7qFBmV_9+)G7)O3)C[rSX.i3=im\4(ri0hurq\97PUcT1r$9a72jF#kD2'X9fH4,31e?Wk7m->$>:`B.nf>kPSe//69DGNntM.bEWb4-D4BRnLpRksdiiPD%d),\TNk$N+@eI;ujUp49RK(7?)"7t3:^C;q?F.6]V[GiN0cWp*KN&:k0.SN:DD>W%Pt=T$ffb-`$[^X;ZkO2.Lp@IUnie*l\N^8j:9Putt&Y'UNl;39RE%i[\/QkQ'G;^TbsBFuQceA5lJ9:L$Q@5mQ%:Kq5'BTG/caGfSFkfnBZ1V)hg[Eteh]T'$5mc=.>A<-jEcg>DLC<gblgpFBCGONWSK4+9BoC&rRJ7?g;]K#0oeQ^M6C'*q*bb?Tciq[9m[#jRM/m5PVA<q7`,j*H8AAjreYq+m1L.R*+;ktfZZUV7<=%H.nMFY/F`Blu0Z;[6@R8,`;fVs\.?4oiGpN%#FguPH(ruf#kA1t<!6*uU2i@(-mYqC?9F^*!tN@)n.-Dca6Y9E;M#Q#I+(,$h/Bj+E,6ff&>:!@s!Z.LdOlU9A1Bt5E73`d_Kh&o-ZQKF/JbqQU\ln_uu)0<L;&&ELrZT!80IQ0`MLI<6E5g4qX3=qsgcW!h^7W(OL;GalY"3sV$1W0>Ho2p%$;n@jdoN36X8+U9N)dbg%E8KZ<.+"j'K7Q.bOJOFcT7T]Sl3%'D&L(oZ6se.nP$#*PHS%JQCWlbQ*9uV[kG*[_l,C8_HhP/3UJIP75u:A,ri?D?=#pp%:6C#5;]8E]bg'3&VRP)oVc!ah13@:J?N5S_.5GX&W+T&lCh:`<H5a3]rF>Gs6c-"%BNi3::%cFM<LT[_Fa`?`aAh)QO#Mg,r,D2gjCl!b8Pt#Kk&KRf<bfCa@t<"[pjiP@\!agi4N=Dt%f76f[\6o6pJWaaDa&H]#KH.Fk&/rKj7(1:$E?.;U_RYsMcRNFd"U`$>cX=q)=Q@D)be&1WiDWG;#>.&FqR:r+BD?2GoDUEPe828G$]n`*'qp5P/H2p4uZf`6D#oh?'@NXgMOX'`c0II!*,\I'q/XO<`q*<f-8rCd*rU)^B,9qF<2I\3*rd"1#HA$5R\oh)a:`1PfbQ)`!l%;DZ"8l@%F(u2g4Q0dlFlN:o+#C8-KW!/G$JC!R2:$=6GD@d'W-cR3/UG+,H0$[Y=hNa<Z)JHKm>Fq,\UZ+7=3hE3`t3@)!S<*\l$HAEDHf))q=,aJ##!4/RbI;n/U2:HmR77tDFq*t_s^J1#3W't*..X:qRs"_c1l%hU4"E.&%4^]8VT155[8(E*;a7k(]8L(.!;5C0jBH!a/H=u?Vek?\p?aQ`4iC'#C'B`:OIIqf63@4CXg+%Jq$'?bgBE&)n=\_o<hV1$p0SV's5-YUjQrM>AJ!u1#^>GG6r'F0U=Xh([gW<-15$bU0.^m7F>'S'h`M=!-ijT<\DWX]_HJ,QkM9SEND^528Z/_$)GiS"53c)#id~>endstream
 endobj
 xref
-0 9
+0 13
 0000000000 65535 f 
 0000000061 00000 n 
-0000000102 00000 n 
-0000000209 00000 n 
-0000000321 00000 n 
-0000000514 00000 n 
-0000000582 00000 n 
-0000000901 00000 n 
-0000000960 00000 n 
+0000000112 00000 n 
+0000000219 00000 n 
+0000000331 00000 n 
+0000000506 00000 n 
+0000000697 00000 n 
+0000000876 00000 n 
+0000000991 00000 n 
+0000001216 00000 n 
+0000001285 00000 n 
+0000001589 00000 n 
+0000001649 00000 n 
 trailer
 <<
 /ID 
-[<d97aa9f4c12f8e5cf58feb51936420b7><d97aa9f4c12f8e5cf58feb51936420b7>]
+[<72a3952a80ab02004c9495799ac9cc47><72a3952a80ab02004c9495799ac9cc47>]
 % ReportLab generated PDF document -- digest (opensource)
 
-/Info 6 0 R
-/Root 5 0 R
-/Size 9
+/Info 10 0 R
+/Root 9 0 R
+/Size 13
 >>
 startxref
-11125
+5158
 %%EOF

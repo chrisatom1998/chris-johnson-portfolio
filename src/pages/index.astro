@@ -13,7 +13,7 @@ const personSchema = {
   '@type': 'Person',
   name: portfolio.name,
   url: portfolio.siteUrl,
-  jobTitle: 'Technical Solutions Consultant',
+  jobTitle: 'Solutions Architect',
   description: portfolio.description,
   alumniOf: {
     '@type': 'CollegeOrUniversity',
@@ -21,11 +21,11 @@ const personSchema = {
   },
   sameAs: [portfolio.contact.linkedinUrl, portfolio.contact.githubUrl],
   knowsAbout: [
-    'Technical solutions consulting',
-    'Advertising technology',
+    'Solutions architecture',
+    'Technical consulting',
     'Cloud architecture',
-    'Data analytics',
     'Generative AI',
+    'Data analytics',
     'API integrations',
   ],
 };
@@ -42,14 +42,14 @@ const personSchema = {
     </div>
     <div class="body-copy" data-reveal>
       {portfolio.about.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
-      <p class="credential">B.S. Computer Science · Georgia Institute of Technology · 2022</p>
+      <p class="credential">B.S. Computer Science · Georgia Institute of Technology · May 2022</p>
     </div>
   </section>
 
   <section class="section section-bordered shell" id="experience" aria-labelledby="experience-title">
     <div class="section-heading section-heading-wide" data-reveal>
       <p class="eyebrow">02 · Experience</p>
-      <h2 id="experience-title">Four years bridging technical systems and customer decisions.</h2>
+      <h2 id="experience-title">Four years designing cloud, data, and AI architectures.</h2>
     </div>
     <Experience experience={portfolio.experience} />
   </section>
@@ -58,7 +58,7 @@ const personSchema = {
     <div class="section-heading work-heading" data-reveal>
       <div>
         <p class="eyebrow">03 · Selected work</p>
-        <h2 id="work-title">Shipped projects with inspectable systems underneath.</h2>
+        <h2 id="work-title">Selected projects in knowledge systems and simulation.</h2>
       </div>
       <a class="text-link" href={portfolio.contact.githubUrl} target="_blank" rel="noreferrer">All GitHub projects ↗</a>
     </div>
@@ -72,7 +72,7 @@ const personSchema = {
   <section class="section section-bordered shell" id="skills" aria-labelledby="skills-title">
     <div class="section-heading section-heading-wide" data-reveal>
       <p class="eyebrow">04 · Capabilities</p>
-      <h2 id="skills-title">Hands-on enough to build. Broad enough to align the room.</h2>
+      <h2 id="skills-title">Languages, cloud platforms, and architecture practices.</h2>
     </div>
     <Skills groups={portfolio.skillGroups} />
   </section>
