@@ -118,7 +118,7 @@ const personSchema = {
   description: portfolio.description,
   alumniOf: { '@type': 'CollegeOrUniversity', name: 'Georgia Institute of Technology' },
   sameAs: [portfolio.contact.linkedinUrl, portfolio.contact.githubUrl],
-  knowsAbout: ['Technical solutions consulting', 'Advertising technology', 'Cloud architecture', 'Data analytics', 'Generative AI', 'API integrations'],
+  knowsAbout: ['Technical solutions consulting', 'Advertising technology', 'Cloud architecture', 'Data analytics', 'Generative AI', 'Power Platform', 'API integrations'],
 };
 
 const homeBody = `
