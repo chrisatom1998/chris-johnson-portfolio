@@ -1,10 +1,10 @@
 export const portfolio = {
   name: 'Chris Johnson',
   siteUrl: 'https://www.chrisjohnson.solutions',
-  pageTitle: 'Chris Johnson — Solutions Architect',
+  pageTitle: 'Chris Johnson — Solutions Architect · Power Platform Expert',
   description:
-    'Chris Johnson is a Solutions Architect and technical consultant with 4+ years at Google and Microsoft delivering Generative AI and analytics on Google Cloud and Azure.',
-  positioning: 'Solutions Architect · Technical Solutions Consultant',
+    'Chris Johnson is a Solutions Architect and Power Platform Expert with 4+ years at Google and Microsoft delivering Generative AI and analytics on Google Cloud and Azure.',
+  positioning: 'Solutions Architect · Power Platform Expert',
   resumeUrl: '/Chris-Johnson-Resume.pdf',
   hero: {
     kicker: 'Long Beach, CA · Google Cloud · Azure · Generative AI',

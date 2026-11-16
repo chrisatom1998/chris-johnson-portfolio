@@ -25,7 +25,7 @@ async function collectTextFiles(relativePath) {
 
 test('portfolio data uses the approved truthful positioning and employment dates', async () => {
   const portfolio = await loadPortfolio();
-  assert.equal(portfolio.positioning, 'Solutions Architect · Technical Solutions Consultant');
+  assert.equal(portfolio.positioning, 'Solutions Architect · Power Platform Expert');
   assert.equal(portfolio.experience[0].title, 'Technical Solutions Consultant');
   assert.equal(portfolio.experience[0].dates, '04/2025 — 09/2026');
   assert.equal(portfolio.experience[1].title, 'Cloud Solution Architect');
